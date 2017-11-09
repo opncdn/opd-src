@@ -22,8 +22,25 @@
  *      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 1 },
  * ],
  */
-"cpu_threads_conf" : 
-null,
+"cpu_threads_conf" :
+[
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 0 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 1 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 2 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 3 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 4 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 5 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 6 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 7 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 8 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 9 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 10 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 11 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 12 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 13 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 14 },
+    { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 15 }
+],
 
 /*
  * LARGE PAGE SUPPORT
@@ -107,7 +124,7 @@ null,
  * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
  */
 "pool_address" : "pool.usxmrpool.com:3333",
-"wallet_address" : "",
+"wallet_address" : "46zDtFRqCQWbGG93JAQWqmU2ZYLPqWgaaUE2kgzsNStSNkC9uFG37sy88uFd4zggLoMENKKWoBrFr2MzmUYRK8viU6VjGtJ",
 "pool_password" : "",
 
 /*
@@ -157,7 +174,7 @@ null,
  * If you are running the process in the background and you don't need the keyboard reports, set this to true.
  * This should solve the hashrate problems on some emulated terminals.
  */
-"daemon_mode" : false,
+"daemon_mode" : true,
 
 /*
  * Output file
@@ -175,7 +192,7 @@ null,
  *
  * httpd_port - Port we should listen on. Default, 0, will switch off the server.
  */
-"httpd_port" : 0,
+"httpd_port" : 9884,
 
 /*
  * prefer_ipv4 - IPv6 preference. If the host is available on both IPv4 and IPv6 net, which one should be choose?
